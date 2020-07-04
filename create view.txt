@@ -1,0 +1,2 @@
+CREATE VIEW orderlineView AS
+SELECT orderline.orderID, product.productName, orderline.orderQty FROM orderline INNER JOIN product ON orderline.productID = product.productID;
